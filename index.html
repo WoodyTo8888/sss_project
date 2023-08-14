@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolaScore</title>
+  <link rel="icon" type="image/x-icon" href="static img/Brand_fav_icon.png">
+  <!-- SEO -->
+
+  <!-- External Link -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="css/general.js"></script>
+  <!-- FontAwesome & Bootstrap icon -->
+  <script src="https://kit.fontawesome.com/ad2de9e858.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Font-Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar-container sticky">
+    <div class="navbar-content wrapper">
+      <div class="navbar-logo">
+        <a href="/">
+          <img src="static img/Transparent_logo.png" alt="SolaScore Logo"
+            onmouseover="this.src='static img/Trans-brand-logo.png';"
+            onmouseout="this.src='static img/Transparent_logo.png';">
+        </a>
+      </div>
+      <div class="navbar-search">
+        <div class="navbar-search_form">
+          <i class="icon-search bi bi-search"></i>
+          <input type="text" placeholder="Search League or Event..." id="search-input">
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <ul>
+          <li class="light-dark-mode"><i class="bi bi-moon-stars-fill active"></i><i class="bi bi-sun-fill"></i></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">News</a></li>
+          <li><a href=""><span>Log in</span></a></li>
+        </ul>
+      </div>
+      <div class="navbar-hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Sports Chosen -->
+  <div class="navbar-container sticky2 second">
+    <div class="navbar-sports wrapper">
+      <div class="sports-menu one">
+        <ul>
+          <li><a href=""><i class="fa-solid fa-star"></i><span>Favorites</span></a></li>
+          <li><a href="" class="active"><i class="fa-solid fa-futbol"></i><span>Football</span></a></li>
+          <li><a href=""><i class="fa-solid fa-basketball"></i><span>Basketball</span></a></li>
+          <li><a href=""><i class="fa-solid fa-headset"></i><span>Esports</span></a></li>
+        </ul>
+      </div>
+      <div class="sports-menu second">
+        <ul>
+          <li><a href=""><i class="fa-solid fa-trophy"></i><span>Fantasy EPL</span></a></li>
+          <li><a href=""><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Advertise -->
+  <div class="Advertise-box">
+    <img src="img/Ads1.png" alt="" width="728px">
+  </div>
+  <!-- Main Content -->
+  <!-- <div class="main-content wrapper">
+    <div class="content-1">
+      <div class="content-1-min">
+        <div class="c1m-sports">x</div>
+        <div class="c1m-sports">x</div>
+        <div class="c1m-sports">x</div>
+        <div class="c1m-sports">x</div>
+      </div>
+      <div class="content-1-exp">
+        x
+      </div>
+    </div>
+    <div class="content-2">x
+
+    </div>
+
+  </div> -->
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('.light-dark-mode').click(function () {
+        $(".bi-sun-fill").toggleClass("active");
+        $(".bi-moon-stars-fill").toggleClass("active");
+      });
+    }
+    );
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+body{
+    background: var(--wall-color);
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+:root{
+    --white-color: #fff;
+    --brand-color: #5742A9;
+    --wall-color: #F6F6F4;
+    --border-color: #E9E9E9;
+    --grey-color: #E6E6E6;
+    --black-color: #23262D;
+    --yellow-color: #FFC017;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky2{
+    position: fixed;
+    top: 65px;
+    width: 100%;
+}
+
+.navbar-logo img{
+    width: 150px;
+    align-items: center;
+}
+
+.navbar-container{
+    border: 1px solid var(--grey-color);
+    height: 65px;
+    z-index: 100;
+    background-color: var(--white-color);
+}
+
+.navbar-container.second{
+    height: auto!important;
+}
+
+.navbar-content,.main-content{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper{
+    display: flex;
+    max-width: 1344px;
+    margin: 0 auto;
+}
+
+.navbar-search_form{
+    background-color: var(--wall-color);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.navbar-search_form input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar-search_form i{
+    padding: 10px;
+}
+
+.navbar-menu ul, .sports-menu ul{
+    display: flex;
+}
+
+.navbar-menu ul li, .sports-menu ul li{
+    padding: 0 10px;
+
+}
+
+.navbar-menu ul li a, .sports-menu ul li a{
+    color: var(--black-color);
+    font-weight: bold;
+    position: relative;
+}
+
+.sports-menu ul li a:hover{
+    color: var(--brand-color);
+}
+
+.sports-menu ul li a i{
+    padding: 0 10px;
+}
+
+.sports-menu.one{
+    margin-left: -30px;
+}
+
+.sports-menu.second{
+    margin-right: 10px;
+}
+
+.sports-menu ul li a.active{
+  color: var(--brand-color);
+  font-weight: bold;
+}
+
+.navbar-menu ul li:not(:last-child) a:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--brand-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.navbar-menu ul li:not(:last-child) a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+.navbar-menu ul li a span{
+    padding: 10px;
+    background: var(--black-color);
+    color: var(--white-color);
+    border-radius: 10px;
+}
+
+.navbar-menu ul li a span:hover{
+    background: var(--brand-color);
+}
+
+.navbar-menu ul li i{
+    cursor: pointer;
+}
+
+.bi-moon-stars-fill,
+.bi-sun-fill{
+   display: none;
+}
+
+.bi-moon-stars-fill.active,
+.bi-sun-fill.active{
+   display: block;
+}
+
+.navbar-sports{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Advertise-box{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-1{
+    display: flex;
+    background-color: #5742A9;
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+
+.content-2{
+    background-color: aqua;
+    flex-basis: 75%;
+    align-self: flex-start;
+}
+
+.content-1-min{
+    flex-basis: 20%;
+}
+
+.content-1-exp{
+    flex-basis: 80%;
+}
+
+.navbar-hamburger{
+    display: none;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 992px){
+    
+    .navbar-menu, .navbar-search_form{
+        display: none;
+    }
+    
+    .navbar-hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-hamburger:hover{
+        color: var(--brand-color);
+    }
+}
+
+@media screen and (max-width: 817px){
+
+    .sports-menu ul li a span{
+        display: none;
+    }
+
+    .sports-menu ul li a i{
+        font-size: 20px;
+    }
+
+    .sports-menu::before{
+        content: '|';
+        right: 145px;
+        top: 16px;
+        position: absolute;
+        color: var(--grey-color);
+    }
+
+}
